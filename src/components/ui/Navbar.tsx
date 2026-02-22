@@ -7,14 +7,16 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import styles from "./Navbar.module.css";
 
 const collections = [
+  { name: "All Collections", href: "/collections" },
   { name: "Sarees", href: "/collections/sarees" },
-  { name: "Silk Sarees", href: "/collections/silk-sarees" },
-  { name: "Banarasi", href: "/collections/banarasi" },
-  { name: "Bridal Collection", href: "/collections/bridal" },
-  { name: "Party Wear", href: "/collections/party-wear" },
-  { name: "Lehengas", href: "/collections/lehengas" },
-  { name: "Kurtis", href: "/collections/kurtis" },
-  { name: "Dupattas", href: "/collections/dupattas" },
+  { name: "Lehenga", href: "/collections/lehenga" },
+  { name: "Kurti", href: "/collections/kurti" },
+  { name: "Dupatta", href: "/collections/dupatta" },
+  { name: "Blouse", href: "/collections/blouse" },
+  { name: "Petticoat", href: "/collections/petticoat" },
+  { name: "Kids Wear", href: "/collections/kids-wear" },
+  { name: "Women Bottom Wear", href: "/collections/women-bottom-wear" },
+  { name: "Towel", href: "/collections/towel" },
 ];
 
 export default function Navbar() {
@@ -40,9 +42,9 @@ export default function Navbar() {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button className={styles.navLink}>
+            <Link href="/collections" className={styles.navLink} onClick={() => setIsDropdownOpen(false)}>
               Collections <ChevronDown size={14} className={styles.icon} />
-            </button>
+            </Link>
             <AnimatePresence>
               {isDropdownOpen && (
                 <motion.div

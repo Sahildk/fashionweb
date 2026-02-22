@@ -10,26 +10,68 @@ import { ArrowRight } from "lucide-react";
 export default function Collections() {
   const collections = [
     {
-      id: "dyed-matching",
-      title: "Dyed Fancy Matching Sarees",
-      subtitle: "Contemporary & Ready-to-Wear",
-      image: "https://images.pexels.com/photos/1485031/pexels-photo-1485031.jpeg?auto=compress&cs=tinysrgb&w=1000",
-      description: "A beautiful amalgamation of modern silhouettes and traditional dyeing techniques. Includes one-minute sarees and intricate net embroidery."
+      id: "sarees",
+      title: "Sarees",
+      subtitle: "Elegance & Tradition",
+      image: "https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      description: "Our diverse gamut of sarees ranging from comfortable handloom cotton to majestic silk and trendy prints."
     },
     {
-      id: "cotton-sarees",
-      title: "Cotton Sarees",
-      subtitle: "Breathable Everyday Elegance",
-      image: "https://images.pexels.com/photos/1578875/pexels-photo-1578875.jpeg?auto=compress&cs=tinysrgb&w=1000",
-      description: "Comfort meets heritage. Our cotton collection ranges from pure Suti Cotton to Chanderi blends, perfect for the modern working woman."
-    },
-    {
-      id: "printed-sarees",
-      title: "Printed Sarees",
-      subtitle: "Vibrant & Weightless",
+      id: "lehenga",
+      title: "Lehenga",
+      subtitle: "Festive & Bridal",
       image: "https://images.pexels.com/photos/3313262/pexels-photo-3313262.jpeg?auto=compress&cs=tinysrgb&w=1000",
-      description: "From digital prints to traditional Lehariya and Ikat. Fluid fabrics like chiffon, georgette, and linen that drape effortlessly."
-    }
+      description: "Explore exquisite lehengas crafted meticulously for your special occasions."
+    },
+    {
+      id: "kurti",
+      title: "Kurti",
+      subtitle: "Casual & Workwear",
+      image: "https://images.pexels.com/photos/1578875/pexels-photo-1578875.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      description: "Stylish everyday staples and intricately detailed kurtis tailored for all occasions."
+    },
+    {
+      id: "dupatta",
+      title: "Dupatta",
+      subtitle: "Fluid Grace",
+      image: "https://images.pexels.com/photos/2735286/pexels-photo-2735286.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      description: "A wide array of dupattas to add finishing grace to any ethnic outfit."
+    },
+    {
+      id: "blouse",
+      title: "Blouse",
+      subtitle: "Readymade & Designer",
+      image: "https://images.pexels.com/photos/1485031/pexels-photo-1485031.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      description: "Statement blouses and classic readymades featuring modern silhouettes."
+    },
+    {
+      id: "petticoat",
+      title: "Petticoat",
+      subtitle: "Essential Layers",
+      image: "https://images.pexels.com/photos/380782/pexels-photo-380782.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      description: "Comfort-first seamless inner garments prioritizing ease and style."
+    },
+    {
+      id: "kids-wear",
+      title: "Kids Wear",
+      subtitle: "Festive Joy",
+      image: "https://images.pexels.com/photos/6157052/pexels-photo-6157052.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      description: "Adorable and comfortable ethnic ensembles specially tailored for children."
+    },
+    {
+      id: "women-bottom-wear",
+      title: "Women Bottom Wear",
+      subtitle: "Versatile Formals & Casuals",
+      image: "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      description: "A comprehensive range of leggings, palazzos, skirts, and trousers."
+    },
+    {
+      id: "towel",
+      title: "Towel",
+      subtitle: "Home & Essentials",
+      image: "https://images.pexels.com/photos/4207908/pexels-photo-4207908.jpeg?auto=compress&cs=tinysrgb&w=1000",
+      description: "Premium, absorbent, and ultra-soft woven towels for everyday use."
+    },
   ];
 
   return (
