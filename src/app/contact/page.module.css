@@ -1,0 +1,280 @@
+.pageContainer {
+  padding-bottom: 0; 
+}
+
+.header {
+  padding: 100px 0 60px;
+  background-color: var(--color-bg-secondary);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--spacing-xxl);
+  align-items: flex-start;
+  padding: var(--spacing-xxl) 0;
+}
+
+.infoColumn {
+  padding-right: var(--spacing-lg);
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.infoText {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+  font-size: 1.1rem;
+}
+
+.infoItems {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.infoItem {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+}
+
+.iconWrapper {
+  color: var(--color-accent);
+  margin-top: 4px;
+}
+
+.infoLabel {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.infoValue {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* WhatsApp Card */
+.whatsappCard {
+  background-color: #f0fdf4; /* Very light green tint */
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.whatsappTitle {
+  font-size: 1.15rem;
+  color: #166534;
+  margin-bottom: var(--spacing-xs);
+}
+
+.whatsappDesc {
+  color: #15803d;
+  font-size: 0.95rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background-color: #25D366; /* WhatsApp Green */
+  color: var(--color-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--transition-smooth);
+}
+
+.whatsappBtn:hover {
+  background-color: #128C7E;
+  transform: translateY(-2px);
+}
+
+/* Form Column */
+.formColumn {
+  background-color: var(--color-white);
+  padding: var(--spacing-xxl);
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+}
+
+.formTitle {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text-primary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-primary);
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color var(--transition-smooth);
+  border-radius: 4px;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+select.input {
+  appearance: none;
+  cursor: pointer;
+}
+
+.submitBtn {
+  margin-top: var(--spacing-sm);
+  width: 100%;
+  padding: 1.25rem;
+}
+
+/* Map Section */
+.mapSection {
+  width: 100%;
+  height: 400px;
+  background-color: #e5e5f7;
+  background-image: repeating-linear-gradient(45deg, #d3d3e6 25%, transparent 25%, transparent 75%, #d3d3e6 75%, #d3d3e6), repeating-linear-gradient(45deg, #d3d3e6 25%, var(--color-bg-secondary) 25%, var(--color-bg-secondary) 75%, #d3d3e6 75%, #d3d3e6);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.mapPin {
+  position: relative;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-sm);
+}
+
+.pinIcon {
+  position: relative;
+  z-index: 2;
+}
+
+.pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  opacity: 0.4;
+  z-index: 1;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+}
+
+.mapText {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .infoColumn {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.75rem;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+  
+  .formColumn {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+  
+  .mapSection {
+    height: 300px;
+  }
+}

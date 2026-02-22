@@ -1,0 +1,219 @@
+.pageContainer {
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  padding-bottom: var(--spacing-xxl);
+}
+
+.topBar {
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg-primary);
+  position: sticky;
+  top: calc(var(--header-height));
+  z-index: 40;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-smooth);
+}
+
+.backLink:hover {
+  color: var(--color-text-primary);
+}
+
+.splitLayout {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  align-items: flex-start;
+}
+
+/* Info Column (Left) */
+.infoColumn {
+  flex: 1;
+  max-width: 400px;
+}
+
+.stickyContent {
+  position: sticky;
+  top: calc(var(--header-height) + 120px);
+}
+
+.subtitle {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.descriptionBlock {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  font-weight: 300;
+}
+
+.actionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.boutiqueBtn {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+/* Gallery Column (Right side, containing sub-collections) */
+.galleryColumn {
+  flex: 2;
+  padding-left: var(--spacing-lg);
+}
+
+.subCatHeader {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.subGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl) var(--spacing-lg);
+}
+
+.subCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 4/5;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: var(--spacing-md);
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.subCard:hover .galleryImage {
+  transform: scale(1.04);
+}
+
+.subContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.subTitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.subDesc {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+  font-weight: 300;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.enquireLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-top: auto;
+  align-self: flex-start;
+  transition: opacity var(--transition-smooth);
+}
+
+.enquireLink:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .splitLayout {
+    flex-direction: column;
+    padding-top: var(--spacing-md);
+    gap: var(--spacing-md);
+  }
+  
+  .infoColumn {
+    max-width: 100%;
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .stickyContent {
+    position: static;
+  }
+  
+  .galleryColumn {
+    padding-left: 0;
+  }
+  
+  .subCatHeader {
+    font-size: 1.75rem;
+  }
+  
+  .subGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+}

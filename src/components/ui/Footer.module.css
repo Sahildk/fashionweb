@@ -1,0 +1,111 @@
+.footer {
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-secondary);
+  padding: var(--spacing-xxl) 0 var(--spacing-lg);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+  display: inline-block;
+}
+
+.brandDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #a8a29e;
+  margin-bottom: var(--spacing-lg);
+  max-width: 300px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.socialIcons a {
+  color: var(--color-bg-secondary);
+  transition: color var(--transition-smooth);
+}
+
+.socialIcons a:hover {
+  color: var(--color-accent);
+}
+
+.sectionTitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-lg);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.linkSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footerLink {
+  color: #a8a29e;
+  font-size: 0.95rem;
+  transition: color var(--transition-smooth);
+}
+
+.footerLink:hover {
+  color: var(--color-accent);
+}
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  color: #a8a29e;
+  font-size: 0.95rem;
+}
+
+.contactItem svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #a8a29e;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
