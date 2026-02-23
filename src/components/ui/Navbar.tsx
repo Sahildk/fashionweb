@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import styles from "./Navbar.module.css";
@@ -29,7 +30,7 @@ export default function Navbar() {
       <div className={`container ${styles.navContainer}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          Svara.
+          <Image src="/logo.jpeg" alt="Shreeji Sarees Logo" width={220} height={70} style={{ objectFit: 'contain', width: 'auto', height: '100%', maxHeight: '60px' }} priority unoptimized />
         </Link>
 
         {/* Desktop Links */}

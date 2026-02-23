@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Svara | Elegant Ethnic Wear",
+  title: "Shreeji Sarees | Elegant Ethnic Wear",
   description: "Premium ethnic wear and beautifully crafted sarees.",
 };
 

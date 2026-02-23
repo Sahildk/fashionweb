@@ -25,7 +25,7 @@ export default function Partnership() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className={styles.subtitle}
           >
-            Collaborate with Svara to bring exquisite ethnic wear to new markets. We offer tailored B2B solutions for retailers and distributors.
+            Collaborate with Shreeji Sarees to bring exquisite ethnic wear to new markets. We offer tailored B2B solutions for retailers and distributors.
           </motion.p>
         </div>
       </section>

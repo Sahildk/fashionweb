@@ -35,7 +35,7 @@ export default function Franchise() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className={styles.subtitle}
           >
-            Partner with a brand that redefines ethnic luxury. Join the Svara family and build a legacy of elegance and profitability.
+            Partner with a brand that redefines ethnic luxury. Join the Shreeji Sarees family and build a legacy of elegance and profitability.
           </motion.p>
         </div>
       </section>
@@ -43,7 +43,7 @@ export default function Franchise() {
       {/* Why Join Us */}
       <section className={`section container`}>
         <div className="text-center">
-          <h2 className={styles.sectionTitle}>Why Franchise With Svara?</h2>
+          <h2 className={styles.sectionTitle}>Why Franchise With Shreeji Sarees?</h2>
           <p className={styles.sectionDesc}>
             A proven business model designed for sustainable growth and premium market positioning.
           </p>

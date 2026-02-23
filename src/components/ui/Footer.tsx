@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Instagram, Facebook, Twitter, Mail, Phone, MapPin } from "lucide-react";
 import styles from "./Footer.module.css";
 
@@ -10,7 +11,9 @@ export default function Footer() {
         <div className={styles.footerGrid}>
           {/* Brand Info */}
           <div className={styles.brandSection}>
-            <Link href="/" className={styles.logo}>Svara.</Link>
+            <Link href="/" className={styles.logo}>
+              <Image src="/logo.jpeg" alt="Shreeji Sarees Logo" width={220} height={70} style={{ objectFit: 'contain', width: 'auto', height: '100%', maxHeight: '60px' }} unoptimized />
+            </Link>
             <p className={styles.brandDesc}>
               Elegant, modern, and culturally rooted. We bring you the finest ethnic wear, woven with tradition and styled for the contemporary world.
             </p>
@@ -52,13 +55,13 @@ export default function Footer() {
             </div>
             <div className={styles.contactItem}>
               <Mail size={18} />
-              <span>hello@svarabrand.com</span>
+              <span>hello@shreejisarees.com</span>
             </div>
           </div>
         </div>
 
         <div className={styles.footerBottom}>
-          <p>&copy; {new Date().getFullYear()} Svara. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Shreeji Sarees. All rights reserved.</p>
         </div>
       </div>
     </footer>

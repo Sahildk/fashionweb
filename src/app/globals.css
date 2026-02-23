@@ -5,9 +5,9 @@
   --font-sans: 'Inter', sans-serif;
 
   /* Color Palette */
-  --color-bg-primary: #fbfaf8; /* Off-white / Cream */
-  --color-bg-secondary: #f2efe9; /* Beige */
-  --color-text-primary: #1c1917; /* Deep almost black brown */
+  --color-bg-primary: #f2ecd8; /* Off-white / Cream adjusted to match logo */
+  --color-bg-secondary: #eaddcb; /* Beige */
+  --color-text-primary: #3b2a1a; /* Adjusted to match the deep brown from the logo */
   --color-text-secondary: #44403c; /* Softer text */
   --color-accent: #cfa144; /* Soft Gold */
   --color-accent-hover: #b88d36;

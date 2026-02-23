@@ -42,10 +42,10 @@ export default function About() {
           >
             <h2 className={styles.sectionTitle}>The Vision</h2>
             <p className={styles.bodyText}>
-              Svara began as a humble attempt to bring the overlooked masterpieces of Indian weavers to the forefront of global fashion. Our founder set out to travel across the artisan villages of India, documenting the intricate weaves that carry centuries of history.
+              Shreeji Sarees began as a humble attempt to bring the overlooked masterpieces of Indian weavers to the forefront of global fashion. Our founder set out to travel across the artisan villages of India, documenting the intricate weaves that carry centuries of history.
             </p>
             <p className={styles.bodyText}>
-              We believe that true luxury lies in the time, skill, and soul poured into a garment. Every saree at Svara represents weeks of meticulous craftsmanship, designed for the woman who appreciates the poetry of fine textiles.
+              We believe that true luxury lies in the time, skill, and soul poured into a garment. Every saree at Shreeji Sarees represents weeks of meticulous craftsmanship, designed for the woman who appreciates the poetry of fine textiles.
             </p>
           </motion.div>
           <motion.div 
@@ -75,7 +75,7 @@ export default function About() {
             {[
               { year: "2015", title: "The Inception", desc: "Started with a single boutique in Mumbai working with 5 master weavers." },
               { year: "2018", title: "Expanding Horizons", desc: "Launched our first bridal couture collection, embracing opulent zardozi." },
-              { year: "2021", title: "Going Global", desc: "Svara crosses borders, delivering heritage pieces to 20+ countries." },
+              { year: "2021", title: "Going Global", desc: "Shreeji Sarees crosses borders, delivering heritage pieces to 20+ countries." },
               { year: "2023", title: "Sustainable Future", desc: "Committed to 100% sustainable dyes and empowering 500+ artisan families." }
             ].map((item, index) => (
               <motion.div 

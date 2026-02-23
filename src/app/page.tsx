@@ -17,7 +17,7 @@ export default function Home() {
       <section className={styles.heroSection}>
         <motion.div className={styles.heroImageWrapper} style={{ y }}>
           <Image
-            src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=2574"
+            src="https://images.unsplash.com/photo-1614951841462-92cb7e25f7fb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Elegant Saree"
             fill
             className={styles.heroImage}
@@ -56,7 +56,7 @@ export default function Home() {
             className={styles.storyImageContainer}
           >
             <Image
-              src="https://images.pexels.com/photos/2735286/pexels-photo-2735286.jpeg?auto=compress&cs=tinysrgb&w=1000"
+              src="https://images.unsplash.com/photo-1670351483982-ea7d9b2555bf?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Artisan weaving"
               fill
               className={styles.storyImage}
@@ -74,7 +74,7 @@ export default function Home() {
               <h2 className={styles.sectionTitle}>The Art of Timeless Grace</h2>
             </div>
             <p className={styles.storyBody}>
-              Every thread tells a story. Svara was born from a passion to preserve the intricate artistry of Indian handlooms while embracing the clean, elegant lines of modern design.
+              Every thread tells a story. Shreeji Sarees was born from a passion to preserve the intricate artistry of Indian handlooms while embracing the clean, elegant lines of modern design.
             </p>
             <p className={styles.storyBody}>
               Our collections are a tribute to the skilled artisans who bring these masterpieces to life. We believe in slow fashion—pieces that are cherished and passed down through generations.
@@ -96,7 +96,7 @@ export default function Home() {
           
           <div className={styles.collectionGrid}>
             {[
-              { title: "Bridal Couture", image: "https://images.pexels.com/photos/1485031/pexels-photo-1485031.jpeg?auto=compress&cs=tinysrgb&w=1000" },
+              { title: "Bridal Couture", image: "https://images.unsplash.com/photo-1764269711882-0e341d401df3?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
               { title: "Pure Banarasi", image: "https://images.pexels.com/photos/3313262/pexels-photo-3313262.jpeg?auto=compress&cs=tinysrgb&w=1000" },
               { title: "Party Ready Lehengas", image: "https://images.pexels.com/photos/1578875/pexels-photo-1578875.jpeg?auto=compress&cs=tinysrgb&w=1000" }
             ].map((item, index) => (
@@ -165,7 +165,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className={styles.ctaContent}
           >
-            <h2 className={styles.ctaTitle}>Grow with Svara</h2>
+            <h2 className={styles.ctaTitle}>Grow with Shreeji Sarees</h2>
             <p className={styles.ctaBody}>
               Join hands with a brand that represents elegance and luxury. 
               We are expanding our presence through exclusive franchise and partnership opportunities.
